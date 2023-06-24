@@ -1,0 +1,72 @@
+#root,html,body {
+  margin: 0;
+  padding:0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.app{
+  height: 100%;
+  background:url('./images/BackImage.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card{
+  background-color: whitesmoke;
+  width: 40%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 20px;
+  padding: 2%;
+  box-shadow: 10px 10px 30px #34343488;
+
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* button */
+.gmadv {
+  display: inline-block;
+  padding: 2%;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: grey;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
+  cursor: pointer;
+}
+
+.gmadv:hover {
+  box-shadow: 4px 4px 8px #d9d9d9, -4px -4px 8px #ffffff;
+}
+
+.gmadv:active {
+  box-shadow: inset 4px 4px 8px #d9d9d9, inset -4px -4px 8px #ffffff;
+}
+
+
+@media only screen and(max-width: 600px){
+  .card {
+    width: 80%;
+    height: 30%;
+  }
+}
+
